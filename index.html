@@ -30,7 +30,7 @@
 <body>
     <h2>３６０度回答画面イメージ<br><span style="font-size: smaller;">※矢印キーで移動・選択できます／タブキーは次の行に進みます</span></h2>
     <form id="surveyForm">
-        <table>
+        <table id="surveyTable">
             <tr>
                 <th>設問</th>
                 <th>対象者</th>
@@ -40,93 +40,60 @@
                 <th>あまりそう思わない</th>
                 <th>全くそう思わない</th>
             </tr>
-            <!-- Q1 -->
-            <tr>
-                <td rowspan="3">Q1. 目標を効果的に設定している</td>
-                <td>新宿太郎</td>
-                <td class="radio-cell"><input type="radio" name="q1_新宿太郎" value="Strongly Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q1_新宿太郎" value="Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q1_新宿太郎" value="Neutral"></td>
-                <td class="radio-cell"><input type="radio" name="q1_新宿太郎" value="Disagree"></td>
-                <td class="radio-cell"><input type="radio" name="q1_新宿太郎" value="Strongly Disagree"></td>
-            </tr>
-            <tr>
-                <td>大久保次郎</td>
-                <td class="radio-cell"><input type="radio" name="q1_大久保次郎" value="Strongly Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q1_大久保次郎" value="Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q1_大久保次郎" value="Neutral"></td>
-                <td class="radio-cell"><input type="radio" name="q1_大久保次郎" value="Disagree"></td>
-                <td class="radio-cell"><input type="radio" name="q1_大久保次郎" value="Strongly Disagree"></td>
-            </tr>
-            <tr>
-                <td>馬場三郎</td>
-                <td class="radio-cell"><input type="radio" name="q1_馬場三郎" value="Strongly Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q1_馬場三郎" value="Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q1_馬場三郎" value="Neutral"></td>
-                <td class="radio-cell"><input type="radio" name="q1_馬場三郎" value="Disagree"></td>
-                <td class="radio-cell"><input type="radio" name="q1_馬場三郎" value="Strongly Disagree"></td>
-            </tr>
-            <!-- Q2 -->
-            <tr>
-                <td rowspan="3">Q2. 状況を現地現物で確かめている</td>
-                <td>新宿太郎</td>
-                <td class="radio-cell"><input type="radio" name="q2_新宿太郎" value="Strongly Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q2_新宿太郎" value="Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q2_新宿太郎" value="Neutral"></td>
-                <td class="radio-cell"><input type="radio" name="q2_新宿太郎" value="Disagree"></td>
-                <td class="radio-cell"><input type="radio" name="q2_新宿太郎" value="Strongly Disagree"></td>
-            </tr>
-            <tr>
-                <td>大久保次郎</td>
-                <td class="radio-cell"><input type="radio" name="q2_大久保次郎" value="Strongly Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q2_大久保次郎" value="Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q2_大久保次郎" value="Neutral"></td>
-                <td class="radio-cell"><input type="radio" name="q2_大久保次郎" value="Disagree"></td>
-                <td class="radio-cell"><input type="radio" name="q2_大久保次郎" value="Strongly Disagree"></td>
-            </tr>
-            <tr>
-                <td>馬場三郎</td>
-                <td class="radio-cell"><input type="radio" name="q2_馬場三郎" value="Strongly Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q2_馬場三郎" value="Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q2_馬場三郎" value="Neutral"></td>
-                <td class="radio-cell"><input type="radio" name="q2_馬場三郎" value="Disagree"></td>
-                <td class="radio-cell"><input type="radio" name="q2_馬場三郎" value="Strongly Disagree"></td>
-            </tr>
-            <!-- Q3 -->
-            <tr>
-                <td rowspan="3">Q3. 戦略・戦術を柔軟に見直している</td>
-                <td>新宿太郎</td>
-                <td class="radio-cell"><input type="radio" name="q3_新宿太郎" value="Strongly Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q3_新宿太郎" value="Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q3_新宿太郎" value="Neutral"></td>
-                <td class="radio-cell"><input type="radio" name="q3_新宿太郎" value="Disagree"></td>
-                <td class="radio-cell"><input type="radio" name="q3_新宿太郎" value="Strongly Disagree"></td>
-            </tr>
-            <tr>
-                <td>大久保次郎</td>
-                <td class="radio-cell"><input type="radio" name="q3_大久保次郎" value="Strongly Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q3_大久保次郎" value="Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q3_大久保次郎" value="Neutral"></td>
-                <td class="radio-cell"><input type="radio" name="q3_大久保次郎" value="Disagree"></td>
-                <td class="radio-cell"><input type="radio" name="q3_大久保次郎" value="Strongly Disagree"></td>
-            </tr>
-            <tr>
-                <td>馬場三郎</td>
-                <td class="radio-cell"><input type="radio" name="q3_馬場三郎" value="Strongly Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q3_馬場三郎" value="Agree"></td>
-                <td class="radio-cell"><input type="radio" name="q3_馬場三郎" value="Neutral"></td>
-                <td class="radio-cell"><input type="radio" name="q3_馬場三郎" value="Disagree"></td>
-                <td class="radio-cell"><input type="radio" name="q3_馬場三郎" value="Strongly Disagree"></td>
-            </tr>
-            <!-- Q4 -->
-            <!-- Similar structure for Q4 with corresponding radio buttons -->
-            <!-- ... -->            
         </table>
         <button type="submit">登録（未実装）</button>
     </form>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            const surveyData = {
+                "questions": [
+                    {
+                        "question": "Q1. 目標を効果的に設定している",
+                        "respondents": ["新宿太郎", "大久保次郎", "馬場三郎"]
+                    },
+                    {
+                        "question": "Q2. 状況を現地現物で確かめている",
+                        "respondents": ["新宿太郎", "大久保次郎", "馬場三郎"]
+                    },
+                    {
+                        "question": "Q3. 戦略・戦術を柔軟に見直している",
+                        "respondents": ["新宿太郎", "大久保次郎", "馬場三郎"]
+                    }
+                ],
+                "choices": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+            };
+
+            const surveyTable = document.getElementById('surveyTable');
+
+            surveyData.questions.forEach((q, qIndex) => {
+                q.respondents.forEach((respondent, rIndex) => {
+                    const row = document.createElement('tr');
+                    if (rIndex === 0) {
+                        const questionCell = document.createElement('td');
+                        questionCell.rowSpan = q.respondents.length;
+                        questionCell.textContent = q.question;
+                        row.appendChild(questionCell);
+                    }
+                    const respondentCell = document.createElement('td');
+                    respondentCell.textContent = respondent;
+                    row.appendChild(respondentCell);
+
+                    surveyData.choices.forEach(choice => {
+                        const cell = document.createElement('td');
+                        cell.classList.add('radio-cell');
+                        const radio = document.createElement('input');
+                        radio.type = 'radio';
+                        radio.name = `q${qIndex + 1}_${respondent}`;
+                        radio.value = choice;
+                        cell.appendChild(radio);
+                        row.appendChild(cell);
+                    });
+
+                    surveyTable.appendChild(row);
+                });
+            });
+
             // 'radio-cell'クラスを持つすべてのセルにイベントリスナーを追加
             const radioCells = document.querySelectorAll('.radio-cell');
             const cellsPerRow = document.querySelector('tr').children.length - 2; // 1行あたりのセル数を取得
@@ -157,35 +124,43 @@
                 });
         
                 // キーボードナビゲーションのサポート
-                cell.setAttribute('tabindex', '0'); // キーボードフォーカスを可能にする
-                cell.addEventListener('keydown', function(e) {
-                    let targetIndex = null;
-                    switch(e.key) {
-                        case 'ArrowLeft': // 左矢印キー
-                            if(index % cellsPerRow > 0) targetIndex = index - 1;
+                cell.setAttribute('tabindex', '0');
+
+                cell.addEventListener('keydown', function(event) {
+                    const key = event.key;
+                    const currentRow = Math.floor(index / cellsPerRow);
+                    const currentCol = index % cellsPerRow;
+
+                    let newIndex;
+                    switch (key) {
+                        case 'ArrowRight':
+                            newIndex = index + 1;
                             break;
-                        case 'ArrowRight': // 右矢印キー
-                            if(index % cellsPerRow < cellsPerRow - 1) targetIndex = index + 1;
+                        case 'ArrowLeft':
+                            newIndex = index - 1;
                             break;
-                        case 'ArrowUp': // 上矢印キー
-                            if(index - cellsPerRow >= 0) targetIndex = index - cellsPerRow;
+                        case 'ArrowDown':
+                            newIndex = index + cellsPerRow;
                             break;
-                        case 'ArrowDown': // 下矢印キー
-                            if(index + cellsPerRow < radioCells.length) targetIndex = index + cellsPerRow;
+                        case 'ArrowUp':
+                            newIndex = index - cellsPerRow;
                             break;
-                        case 'Tab': // タブキー
-                            e.preventDefault(); // デフォルトのタブ動作をキャンセル
-                            if(e.shiftKey) { // Shiftキーが押されている場合は逆方向
-                                if(index - cellsPerRow >= 0) targetIndex = index - cellsPerRow;
-                            } else {
-                                if(index + cellsPerRow < radioCells.length) targetIndex = index + cellsPerRow;
+                        case 'Tab':
+                            event.preventDefault(); // デフォルトのタブ動作を無効化
+                            newIndex = index + cellsPerRow;
+                            if (newIndex >= radioCells.length) {
+                                newIndex = index % cellsPerRow; // 最後の行に達したら最初の行に戻る
                             }
-                            break;
+                        break;
+
+                        default:
+                            return;
                     }
-                    if(targetIndex !== null) {
-                        radioCells[targetIndex].focus();
-                        // 移動した先のセルのラジオボタンを選択する
-                        const radioButton = radioCells[targetIndex].querySelector('input[type="radio"]');
+
+                    if (newIndex >= 0 && newIndex < radioCells.length) {
+                        radioCells[newIndex].focus();
+                        // 新しいセルのラジオボタンを選択
+                        const radioButton = radioCells[newIndex].querySelector('input[type="radio"]');
                         if (radioButton) {
                             radioButton.checked = true;
                             // 他のセルの選択を解除
@@ -195,10 +170,11 @@
                                     c.classList.remove('selected');
                                 }
                             });
-                            // 移動した先のセルに選択クラスを追加
-                            radioCells[targetIndex].classList.add('selected');
+                            // 現在のセルに選択クラスを追加
+                            radioCells[newIndex].classList.add('selected');
                         }
                     }
+
                 });
             });
         });
@@ -220,6 +196,5 @@
             // 例: サーバーに送信する、ローカルに保存するなど
         });
     </script>
-         
 </body>
 </html>
